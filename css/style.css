@@ -1,0 +1,311 @@
+
+
+/* ----------------- BASIC SETUP ------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body {
+/*all the other elements of responsive layouts will be based on the sizes especified in here*/
+  font-family: sans-serif;
+  font-weight: 100;
+
+
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+/*when you use float you have to use clearfix*/
+/*aplied to the ul*/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------- REUSEBLE COMPONENTS ------------------*/
+section {
+    padding: 80px 0;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ----------------- HEADER ------------------*/
+header {
+/*liner-gradient makes the img darker, by 70
+    5 in this case*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/tech3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/tech2.jpg);
+/*    100% of the view port*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+/*    nice effect, makes the img fixed when scrolling*/
+    background-attachment: fixed;
+}
+
+/* ----------------- NAV BAR ------------------*/
+.ion-code {
+    color: #fff;
+    font-size:55px;
+    float: left;
+    margin-top: 40px;
+}
+
+.ion-code:hover {
+  color: red;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin: 50px;
+  margin-right: -1px;
+
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 100px;
+    /*border-bottom: 2px solid transparent;*/
+    text-align: center;
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+
+}
+
+.main-nav li:hover,
+.main-nav li:active {
+    border: 1px solid red;
+
+}
+
+ /* ----------------- HERO TEXT BOX ------------------*/
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+/*translete de element of its height to the left*/
+    transform: translate(-50%, -50%);
+}
+.hero-text-box img {
+  /*position: absolute;*/
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+.hero-text-box h1 {
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+.hero-text-box a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  margin: 10px 15px 0 0;
+
+
+}
+
+#contacta {
+  background-color: red;
+  color: #fff;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+#blog {
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#contacta:hover {
+  color: white;
+}
+
+.hero-text-box a:hover {
+  border: 1px solid white;
+  background-color: red;
+  color: white;
+}
+
+
+
+.section-portfolio {
+  padding: 0;
+}
+
+.portfolio-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.portfolio-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.portfolio-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+/*    blackground color do black to make its opacity*/
+    background-color: #000;
+}
+
+.portfolio-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    /*make the img bigger*/
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+/*trasition*/
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, -webkit-transform 1s;
+    transition: transform 1s, opacity 1s;
+    transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.portfolio-photo img:hover{
+    opacity: 1;
+/*make the img smaller*/
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+/* ----------------- ABOUT ------------------*/
+
+.section-about h2 {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+  /*background-color: black;*/
+  /*padding: 10px;*/
+  /*margin: 0 40% 0 40%;*/
+  /*color: white;*/
+  /*border-radius: 10%;*/
+}
+
+.section-about img {
+  width: 25%;
+  height: 30%;
+  border-radius: 10%;
+  float: left;
+}
+
+.section-about .description {
+  float: right;
+  width: 71%;
+  text-align: justify;
+}
+
+
+
+.icon {
+  margin-top: 150px;
+  font-size: 600%;
+  text-align: center;
+  margin-left: px;
+  /*position: absolute;*/
+}
+
+.icon h2 {
+  text-align: center;
+}
+
+.js {
+  color: #dde018;
+}
+
+.python {
+  color: steelblue;
+}
+
+.html {
+  color: #f97d1d;
+}
+
+.css {
+  color: #1d8ef9;
+}
+
+
+.js--wp-2 {
+    opacity: 0;
+}
+
+
+.js-wp-2.animated {
+    opacity: 1;
+}
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  animation-duration: 1s;
+}
+
+p {
+  text-align: justify;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+/* */

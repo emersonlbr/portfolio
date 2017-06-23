@@ -1,13 +1,12 @@
-print ("emerson is a fucking bitch")
+print ("Does this code work?")
 
-emerson = 4
+emerson = 10
 
-def lol():
+def test():
 	if emerson > 1:
 		print(emerson)
 	else:
-		print("im not your negro")
-
+		print("11")
 
 lol()
 

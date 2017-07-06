@@ -10,6 +10,7 @@ var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
 
 
+
 easyBtn.addEventListener("click", function() {
   hardBtn.classList.remove("selected");
   easyBtn.classList.add("selected");

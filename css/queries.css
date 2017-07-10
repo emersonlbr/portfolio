@@ -3,7 +3,9 @@
 /* -------- BIG TABLETS to 1200 -----------*/
 
 @media only screen and (max-width: 1200px) {
-
+  width {
+    max-width: 500px;
+  }
 }
 
 
@@ -19,7 +21,7 @@
 /* -------- IPAD -----------*/
 
 @media only screen and (max-width: 810px) {
-  
+
 }
 
 

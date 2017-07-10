@@ -20,6 +20,10 @@ p1Button.addEventListener("click", function(){
       // p1Display.style.color = "red";
     }
     p1Display.textContent = p1Score;
+
+    
+
+
   }
 });
 

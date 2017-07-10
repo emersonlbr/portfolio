@@ -14,6 +14,8 @@ body {
   font-weight: 100;
 
 
+
+
 }
 
 h1,
@@ -331,6 +333,8 @@ p {
 footer {
   background-color: black;
   color: white;
+  contend-align: center;
+/* code missing in this file cause we dont have enough cash*/
 }
 
 
@@ -340,3 +344,7 @@ footer {
 
 
 /* */
+/*what do you have inside?*/
+c {
+
+}
